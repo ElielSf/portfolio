@@ -1,0 +1,36 @@
+.containerHeader {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr 64px 64px 64px 1fr;
+    grid-template-areas: ". hb cb ab .";
+    background-color: purple;
+}
+
+.containerHeader__Home {
+    width: 100%;
+    height: 100%;
+    grid-area: hb;
+}
+
+.containerHeader__Contacts {
+    grid-area: cb;
+}
+
+.containerHeader__About {
+    grid-area: ab;
+}
+
+.containerHeader__Home__buttonHome {
+
+}
+
+.containerHeader__Contacts__buttonContacts {
+
+}
+
+.containerHeader__About__buttonAbout {
+
+}

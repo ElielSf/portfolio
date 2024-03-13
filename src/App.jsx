@@ -1,17 +1,18 @@
-import style from './App.module.css';
+import './App.css';
+import Header from './Header.jsx'
 
 export default function App() {
   return (
-    <div className={style.container}>
-        <header className={style.header}>
-          <h1>a</h1>
-        </header>
-        <main className={style.main}>
-          <h1>b</h1>
-        </main>
-        <footer className={style.footer}>
-          <h1>b</h1>
-        </footer>
+    <div className='container'>
+      <header className='header'>
+        <Header />
+      </header>
+      <main className='main'>
+        <h1>b</h1>
+      </main>
+      <footer className='footer'>
+        <h1>c</h1>
+      </footer>
     </div>
   )
 }
