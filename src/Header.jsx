@@ -7,7 +7,7 @@ export default function Header() {
                 <button className='containerHeader__Home__buttonHome'>Início</button>
             </div>
             <div className='containerHeader__Contacts'>
-                <button claswsName='containerHeader__Contacts__buttonContacts'>Contatos</button>
+                <button className='containerHeader__Contacts__buttonContacts'>Contato</button>
             </div>
             <div className='containerHeader__About'>
                 <button className='containerHeader__About__buttonAbout'>Sobre</button>
