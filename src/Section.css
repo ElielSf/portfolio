@@ -1,0 +1,101 @@
+.containerSection {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0; 
+    display: grid;
+    grid-template-columns: 0.5fr 9fr 0.5fr;
+    grid-template-rows: 0.5fr 9fr 0.5fr;
+    grid-template-areas: ". . ."
+                         ". ms ."
+                         ". . .";   
+                         
+    background-image: linear-gradient(to bottom, #1f1e1e, #535353);
+}
+
+.containerSection__Main {
+    grid-area: ms;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.containerSection__Main__Img {
+    margin: 0;
+    width: 90%;
+    max-width: 750px;
+    height: 50%;
+    background-color: aqua;
+    border-radius: 10px;
+}
+
+.containerSection__Main__Text {
+    margin-top: 3vh; 
+    width: 60%;
+    max-width: 500px;
+    height: 25%;
+    border-radius: 10px;
+    background-color: rgb(10, 10, 10);
+    display: flex;
+}
+
+.containerSection__Main__Text__Paragraph {
+    color: white;
+    text-align: center;
+    margin: auto;
+    max-width: 90%;
+    font-weight: 500;
+}
+
+.containerSection__Main__Button {
+    margin-top: 3vh; 
+    width: 30%;
+    max-width: 150px;
+    max-height: 70px;
+    height: 10%;
+    border-radius: 10px;
+    display: flex;
+    place-items: center;
+    justify-content: center;
+    color: white;
+    background-color: black;
+}
+
+.containerSection__Main__Button:hover {
+    background-color: white;
+    color: black;
+    animation: colorChangeButton 0.5s;
+    font-weight: 500;
+}
+
+@keyframes colorChangeButton {
+    100% {background-color: white;}
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+    .containerSection__Main__Text__Paragraph {
+      font-size: 11px; 
+    }
+  }
+  
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    .containerSection__Main__Text__Paragraph {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    .containerSection__Main__Text__Paragraph {
+    font-size: 23px; 
+    }
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1200px) {
+    body {
+        font-size: 25.5px; 
+    }
+}

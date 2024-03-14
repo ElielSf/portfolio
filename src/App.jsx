@@ -1,5 +1,6 @@
 import './App.css';
 import Header from './Header.jsx'
+import Section from './Section.jsx'
 
 export default function App() {
   return (
@@ -7,12 +8,9 @@ export default function App() {
       <header className='header'>
         <Header />
       </header>
-      <main className='main'>
-        <h1>b</h1>
-      </main>
-      <footer className='footer'>
-        <h1>c</h1>
-      </footer>
+      <section className='section'>
+        <Section />
+      </section>
     </div>
   )
 }

@@ -10,28 +10,20 @@
   grid-template-columns: 1fr 8fr 1fr;
   grid-template-rows: 1fr 8fr 1fr;
   grid-template-areas: "h h h"
-                       "m m m"
-                       "f f f";
-}
-
-@media (min-width: 320px) and (orientation: landscape){
-
+                       "s s s"
+                       "s s s";
+              
+  border: none;
 }
 
 .header {
   grid-area: h;
   min-height: 48px;
   min-width: 32px;
-  background-color: blue;
 }
 
-.main {
-  grid-area: m;
+.section {
+  grid-area: s;
   min-height: 80vh;
   background-color: yellow;
-}
-
-.footer {
-  grid-area: f;
-  background-color: red;
 }

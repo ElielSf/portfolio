@@ -5,11 +5,12 @@
     padding: 0;
     display: grid;
     place-items: center;
+    box-shadow: 10px 10px 10px black;
     grid-template-columns: 1fr 100px 100px 100px 1fr;
     grid-template-areas: ". hb cb ab .";
     background-color: black;
 }
-
+ 
 .containerHeader__Home {
     grid-area: hb;
 }
@@ -38,8 +39,8 @@
     border-radius: 5px;
     border: none; 
     font-size: 1em;
-    color: white;
-    background-color: black; 
+    color: white;  
+    background-color: black;
 }
 
 .containerHeader__About__buttonAbout {
@@ -48,9 +49,8 @@
     border-radius: 5px;
     border: none; 
     font-size: 1em;
-    color: white;
+    color: white;  
     background-color: black;
-    
 }
 
 .containerHeader__About__buttonAbout:hover,
@@ -63,12 +63,6 @@
     font-weight: 500;
 }
 
-.containerHeader__About__buttonAbout::before,
-.containerHeader__Contacts__buttonContacts::before,
-.containerHeader__Home__buttonHome::before {
-
-}
-
 @keyframes colorChange {
-    50% {background-color: color: white;}
+    100% {background-color: white;}
 }
