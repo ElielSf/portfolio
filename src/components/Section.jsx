@@ -1,5 +1,6 @@
 import '../css/Section.css'
 import Slideshow from './Slideshow.jsx'
+import { Link } from 'react-router-dom'
 
 export default function Section() {
     return (
@@ -15,7 +16,7 @@ export default function Section() {
                     </p>
                 </div>
                 <div className='containerSection__Main__Button'>
-                    <h5>Saiba Mais</h5>
+                    <Link className='linkButton' to='/about'><button className='containerSection__Main__Button__Click'>Saiba Mais</button></Link>
                 </div>
             </div>
         </div>

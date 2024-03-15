@@ -28,12 +28,13 @@
     margin: 0;
     width: 90%;
     max-width: 750px;
+    max-height: 450px;
     height: 50%;
     border-radius: 10px;
 }
 
 .containerSection__Main__Text {
-    margin-top: 3vh; 
+    margin-top: 2vh; 
     width: 60%;
     max-width: 500px;
     height: 25%;
@@ -51,7 +52,7 @@
 }
 
 .containerSection__Main__Button {
-    margin-top: 3vh; 
+    margin-top: 2vh; 
     width: 30%;
     max-width: 150px;
     max-height: 70px;
@@ -60,11 +61,23 @@
     display: flex;
     place-items: center;
     justify-content: center;
+}
+
+.containerSection__Main__Button__Click {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 15px;
     color: black;
     background-color: white;
 }
 
-.containerSection__Main__Button:hover {
+.linkButton {
+    width: 100%;
+    height: 100%;
+}
+
+.containerSection__Main__Button__Click:hover {
     background-color: black;
     color: white;
     animation: colorChangeButton 1s;
@@ -75,47 +88,30 @@
     100% {background-color: black;}
 }
 
-@media only screen and (min-width: 320px) and (max-width: 480px) {
+@media screen and (max-width: 600px) {
+    .containerSection__Main__Button__Click {
+        font-size: 14px; /* Reduz o tamanho do texto para telas menores */
+    }
     .containerSection__Main__Text__Paragraph {
-      font-size: 11px; 
-    }
-    .containerSection__Main__Button {
-        font-size: 20px;
-    }
-  }
-  
-@media only screen and (min-width: 481px) and (max-width: 768px) {
-    .containerSection__Main__Text__Paragraph {
-        font-size: 16px;
-    }
-    .containerSection__Main__Button {
-        font-size: 20px;
+        font-size: 12px;
     }
 }
 
-@media only screen and (min-width: 769px) and (max-width: 1024px) {
-    .containerSection__Main__Text__Paragraph {
-    font-size: 23px; 
-    }
-    .containerSection__Main__Button {
-        font-size: 24px;
+/* Media query para telas maiores que 1200 pixels de largura */
+@media screen and (min-width: 1200px) {
+    .containerSection__Main__Button__Click, .containerSection__Main__Text__Paragraph {
+        font-size: 18px; /* Aumenta o tamanho do texto para telas maiores */
     }
 }
 
-@media only screen and (min-width: 1025px) and (max-width: 1200px) {
-    .containerSection__Main__Text__Paragraph {
-        font-size: 25px; 
-    }
-    .containerSection__Main__Button {
-        font-size: 25px;
+@media screen and (min-width: 1400px) {
+    .containerSection__Main__Button__Click, .containerSection__Main__Text__Paragraph {
+        font-size: 24px; /* Aumenta o tamanho do texto para telas maiores */
     }
 }
 
-@media only screen and (min-width: 1201px) and (max-width: 2000px) {
-    .containerSection__Main__Text__Paragraph {
-        font-size: 27.5px; 
-    }
-    .containerSection__Main__Button {
-        font-size: 30px;
+@media screen and (min-width: 1800px) {
+    .containerSection__Main__Button__Click, .containerSection__Main__Text__Paragraph {
+        font-size: 28px;
     }
 }

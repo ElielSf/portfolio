@@ -1,6 +1,6 @@
 import './css/App.css';
 import Header from './components/Header.jsx'
-import Section from './components/Section.jsx'
+import { Outlet } from 'react-router-dom'
 
 export default function App() {
   return (
@@ -9,7 +9,7 @@ export default function App() {
         <Header />
       </header>
       <section className='section'>
-        <Section />
+        <Outlet />
       </section>
     </div>
   )

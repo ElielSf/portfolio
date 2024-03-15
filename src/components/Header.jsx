@@ -1,16 +1,17 @@
+import { Link } from 'react-router-dom'
 import '../css/Header.css'
 
 export default function Header() {
     return (
         <div className='containerHeader'>
             <div className='containerHeader__Home'>
-                <button className='containerHeader__Home__buttonHome'>Início</button>
+                <Link to='/'><button onClick='/' className='containerHeader__Home__buttonHome'>Início</button></Link>
             </div>
             <div className='containerHeader__Contacts'>
-                <button className='containerHeader__Contacts__buttonContacts'>Contato</button>
+                <Link to='/contact'><button onClick='/contact' className='containerHeader__Contacts__buttonContacts'>Contato</button></Link>
             </div>
             <div className='containerHeader__About'>
-                <button className='containerHeader__About__buttonAbout'>Sobre</button>
+                <Link to='/about'><button className='containerHeader__About__buttonAbout'>Sobre</button></Link>
             </div>
         </div>
     )

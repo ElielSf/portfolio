@@ -1,10 +1,8 @@
 .contentContact {
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    grid-template-columns: 1fr 6fr 1fr 6fr 1fr 6fr 1fr;
-    grid-template-rows: 1fr 5fr 0.5fr 24fr 1fr;
+    background-color: blue;
+    display: grid;
+    grid-template-columns: 1fr 4fr 1.5fr 4fr 1.5fr 4fr 1fr;
+    grid-template-rows: 1fr 5fr 0.5fr 10fr 1fr;
     grid-template-areas:    ". . . . . . ."
                           ". ct ct ct ct ct ."
                             ". . . . . . ."
@@ -12,18 +10,43 @@
                             ". . . . . . .";
 }   
 
+.contentContact, .contentContact__Email, .contentContact__Title, .contentContact__Whatsapp, .contentContact__Github {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
 .contentContact__Title {
     grid-area: ct;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    color: white;
 }
 
 .contentContact__Email {
     grid-area: ce;
+    border-radius: 10px;
+    background-color: yellow;
+    align-items: center;
+}
+
+.contentContact__Email_Link {
+    width: 100%;
+    height: 100%;
 }
 
 .contentContact__Whatsapp {
     grid-area: cw;
+    background-color: red;
+    border-radius: 10px;
 }
 
 .contentContact__Github {
     grid-area: cg;
+    background-color: green;
+    border-radius: 10px;
 }
