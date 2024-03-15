@@ -1,6 +1,6 @@
-import './App.css';
-import Header from './Header.jsx'
-import Section from './Section.jsx'
+import './css/App.css';
+import Header from './components/Header.jsx'
+import Section from './components/Section.jsx'
 
 export default function App() {
   return (

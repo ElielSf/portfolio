@@ -1,0 +1,29 @@
+.contentContact {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    grid-template-columns: 1fr 6fr 1fr 6fr 1fr 6fr 1fr;
+    grid-template-rows: 1fr 5fr 0.5fr 24fr 1fr;
+    grid-template-areas:    ". . . . . . ."
+                          ". ct ct ct ct ct ."
+                            ". . . . . . ."
+                           ". ce . cw . cg ."
+                            ". . . . . . .";
+}   
+
+.contentContact__Title {
+    grid-area: ct;
+}
+
+.contentContact__Email {
+    grid-area: ce;
+}
+
+.contentContact__Whatsapp {
+    grid-area: cw;
+}
+
+.contentContact__Github {
+    grid-area: cg;
+}
