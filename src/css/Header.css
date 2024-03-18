@@ -22,27 +22,7 @@
     grid-area: ab;
 }
 
-.containerHeader__Home__buttonHome {
-    width: 100px;
-    height: 10vh;
-    border-radius: 5px;
-    border: none; 
-    font-size: 1em;
-    color: white;  
-    background-color: black;
-}
-
-.containerHeader__Contacts__buttonContacts {
-    width: 100px;
-    height: 10vh;
-    border-radius: 5px;
-    border: none; 
-    font-size: 1em;
-    color: white;  
-    background-color: black;
-}
-
-.containerHeader__About__buttonAbout {
+.containerHeader__Home__buttonHome, .containerHeader__Contacts__buttonContacts, .containerHeader__About__buttonAbout {
     width: 100px;
     height: 10vh;
     border-radius: 5px;

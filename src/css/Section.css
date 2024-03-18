@@ -1,6 +1,9 @@
-.containerSection {
+.containerSection, .containerSection__Main, .containerSection__Main__Button__Click, .linkButton {
     width: 100%;
     height: 100%;
+}
+
+.containerSection {
     margin: 0;
     padding: 0; 
     display: grid;
@@ -15,66 +18,63 @@
 
 .containerSection__Main {
     grid-area: ms;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    height: 100%;
+
     border-radius: 10px;
 }
 
 .containerSection__Main__Img {
     margin: 0;
     width: 90%;
+    height: 50%;
     max-width: 750px;
     max-height: 450px;
-    height: 50%;
+
     border-radius: 10px;
 }
 
 .containerSection__Main__Text {
     margin-top: 2vh; 
     width: 60%;
-    max-width: 500px;
     height: 25%;
+    max-width: 500px;
+    display: flex;
+
     border-radius: 10px;
     background-color: rgb(10, 10, 10);
-    display: flex;
 }
 
 .containerSection__Main__Text__Paragraph {
-    color: white;
-    text-align: center;
     margin: auto;
     max-width: 90%;
+    text-align: center;
+
     font-weight: 500;
+    color: white;
 }
 
 .containerSection__Main__Button {
     margin-top: 2vh; 
     width: 30%;
+    height: 10%;
     max-width: 150px;
     max-height: 70px;
-    height: 10%;
-    border-radius: 15px;
     display: flex;
     place-items: center;
     justify-content: center;
+
+    border-radius: 15px;
 }
 
 .containerSection__Main__Button__Click {
-    width: 100%;
-    height: 100%;
     border: none;
     border-radius: 15px;
     color: black;
     background-color: white;
-}
-
-.linkButton {
-    width: 100%;
-    height: 100%;
 }
 
 .containerSection__Main__Button__Click:hover {
@@ -90,23 +90,22 @@
 
 @media screen and (max-width: 600px) {
     .containerSection__Main__Button__Click {
-        font-size: 14px; /* Reduz o tamanho do texto para telas menores */
+        font-size: 14px; 
     }
     .containerSection__Main__Text__Paragraph {
         font-size: 12px;
     }
 }
 
-/* Media query para telas maiores que 1200 pixels de largura */
 @media screen and (min-width: 1200px) {
     .containerSection__Main__Button__Click, .containerSection__Main__Text__Paragraph {
-        font-size: 18px; /* Aumenta o tamanho do texto para telas maiores */
+        font-size: 18px; 
     }
 }
 
 @media screen and (min-width: 1400px) {
     .containerSection__Main__Button__Click, .containerSection__Main__Text__Paragraph {
-        font-size: 24px; /* Aumenta o tamanho do texto para telas maiores */
+        font-size: 24px;
     }
 }
 
