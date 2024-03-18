@@ -1,0 +1,66 @@
+<div className='contentAbout'>
+            <div className='contentAbout__imageDiv'>
+                <img className='contentAbout__imageDiv__image'  src="imagem-minha.jpeg" alt="imagem-do-criador-do-site" />
+            </div>
+            <div className='contentAbout__textDiv'>
+               <h2 className='contentAbout__textDiv__title'>Quem sou eu?</h2>
+               <p className='contentAbout__textDiv__paragraph'>Eu me chamo Eliel Souza Ferreira e sou um estudante do curso desenvolvimento de sistemas no SENAI. Atualmente estou cursando o terceiro semestre a noite. Moro em Alagoinhas, Bahia.</p>
+               <h2 className='contentAbout__textDiv__title'>Quais tecnologias eu sei usar?</h2>
+               <h4 className='contentAbout__textDiv__subTitle'>Linguagens de programação:</h4>
+                <li className='contentAbout__textDiv__item'>C - Foi a primeira linguagem que eu aprendi, por isso estou bem acostumado com ela.</li>
+                <li className='contentAbout__textDiv__item'>Python - Aprendi somente o básico da linguagem.</li>
+                <li className='contentAbout__textDiv__item'>Javascript - Estou aprendendo ela atualmente para usar melhor os frameworks dela.</li>
+               <h4 className='contentAbout__textDiv__subTitle'>Frameworks:</h4>
+                <li className='contentAbout__textDiv__item'>Node.js: Estou estudando para fazer o backend dos sites e conectar ao banco de dados.</li>
+                <li className='contentAbout__textDiv__item'>React.js: Estou aprendendo para usar no frontend das aplicações, incluindo esse site que foi feito somente com React.</li>
+               <h4 className='contentAbout__textDiv__subTitle'>Banco de dados:</h4> 
+                <li className='contentAbout__textDiv__item'>MySQL: É o banco de dados que mais utilizei e estou atualmente estudando os assuntos mais intermediários.</li>
+               <p className='contentAbout__textDiv__paragraph'>Como planejo seguir no desenvolvimento web, sei usar tecnologias como HTML e CSS, sei usar o Git para versionamento de código, consigo usar o figma para desenvolver layouts e conheço bem a orientação a objetos.</p>               
+            </div>
+        </div>
+
+
+
+
+        <Accordion>
+            {aboutData.map(data => (
+            <AccordionItem key={data.key}>
+                <AccordionHeader>
+                    <h1>{data.title}</h1>
+                </AccordionHeader>
+                <AccordionBody>
+                    <p>{data.content}</p>
+                </AccordionBody>
+            </AccordionItem>
+            ))}
+        </Accordion>
+
+
+
+
+        <AccordionHeader>
+                    <h1>Quais tecnologias eu uso?</h1>
+                </AccordionHeader>
+                <AccordionBody>
+                    <AccordionHeader>
+                        <h3>Linguagens de programação</h3>
+                    </AccordionHeader>
+                    <AccordionBody>
+                        <p>C - Intermediário</p>
+                        <p>Python - Básico</p>
+                        <p>Javascript - Básico</p>
+                    </AccordionBody>
+                    <AccordionHeader>
+                        <h3>Frameworks</h3>
+                    </AccordionHeader>
+                    <AccordionBody>
+                        <p>Node.js: Framework para criar o backend das aplicações.</p>
+                        <p>React.js: Framework para cria o frontend SPA das aplicações.</p>
+                    </AccordionBody>
+                    <AccordionHeader>
+                        <h3>Banco de dados</h3>
+                    </AccordionHeader>
+                    <AccordionBody>
+                        <p>MySQL: Banco de dados relacional.</p>
+                    </AccordionBody>
+                </AccordionBody>

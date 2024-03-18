@@ -9,7 +9,7 @@
     grid-template-areas: ". hb cb ab .";
     background-color: black;
 }
- 
+
 .containerHeader__Home {
     grid-area: hb;
 }

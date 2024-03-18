@@ -32,7 +32,6 @@
 .contentContact__Email {
     grid-area: ce;
     border-radius: 10px;
-    align-items: center;
 }
 
 .contentContact__Email_Link {
