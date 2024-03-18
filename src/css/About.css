@@ -19,7 +19,7 @@
 
 .contentAbout__imageDiv {
     grid-area: im;
-    width: 30%;
+    width: 22%;
     height: 95%;
 }
 
@@ -31,6 +31,5 @@
 
 .contentAbout_accordions {
     grid-area: te;
-    background-color: blue;
 }
 

@@ -1,10 +1,9 @@
-.accordionContent {
+.accordionContent, .accordionContent__item {
     width: 100%;
     height: 100%;
-    
 }
 
-.accordionContent {
+.accordionContent, .accordionContent__item {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -12,8 +11,29 @@
     justify-content: center;
 }
 
-.accordionContent__item {
-    width: 100%;
-    height: 100%;
-    
+.accordionContent__item__header {
+    width: 40%;
+    height: 17%;
+
+    border-bottom: solid rgb(219, 219, 219);
+    border-radius: 15px; 
+}
+
+.accordionContent__item__body {
+    width: 38%;   
+    height: auto;
+    display: grid;
+    text-align: center;
+    background-color: black;
+}
+
+.accordionContent__header__title {
+    text-align: left;
+    margin-left: 15px;
+}
+
+.accordionContent__body__text {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: white;
 }

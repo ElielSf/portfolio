@@ -10,7 +10,7 @@ export default function Section() {
                     <Slideshow />
                 </div>
                 <div className='containerSection__Main__Text'>
-                    <p className='containerSection__Main__Text__Paragraph'>                                 “Criar soluções inovadoras para os problemas que surgem é o 
+                    <p className='containerSection__Main__Text__Paragraph'>“Criar soluções inovadoras para os problemas que surgem é o 
                     meu modo de contribuir para a indústria e 
                     a sociedade.”<br/><br/>- Eliel Souza
                     </p>
