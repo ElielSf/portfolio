@@ -11,22 +11,23 @@
     place-content: center;
 
     font-weight: 400;
+    border: none;
     border-radius: 10px;
     color: black;
 }
 
 .cardEmail {
-    box-shadow: 2px 2px #b3b600;
+    box-shadow: 3px 4px #a4a704;
     background-color: #FAFF00;
 }
 
 .cardWhatsapp {
-    box-shadow: 2px 2px #03af00;
+    box-shadow: 3px 4px #03af00;
     background-color: #05FF00;
 }
 
 .cardGithub { 
-    box-shadow: 2px 2px #008db1;
+    box-shadow: 3px 4px #008db1;
     background-color: #00E0FF;
 }
 
